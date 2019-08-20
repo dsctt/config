@@ -1,16 +1,21 @@
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+call plug#end()
+
 " airline
-let g:airline_theme = 'dracula'
 let g:airline#extensions#tabline#enabled = 0 
 let g:airline#extensions#branch#enabled = 1 
 let g:airline_left_sep = ' ❤  '
 let g:airline_right_sep = ' 🟆  '
 let g:airline_section_warning = ''
 
-" Nerd Tree
+" nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
-execute pathogen#infect()
 syntax on
+filetype plugin indent on
+
 set number
 set relativenumber
-filetype plugin indent on
