@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " airline
@@ -14,8 +15,10 @@ let g:airline_section_warning = ''
 " nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
+colorscheme gruvbox
 syntax on
 filetype plugin indent on
 
+set hidden
 set number
 set relativenumber
