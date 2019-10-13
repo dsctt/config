@@ -16,7 +16,8 @@ let g:airline_section_warning = ''
 map <C-n> :NERDTreeToggle<CR>
 
 colorscheme gruvbox
-syntax on
+set background=dark
+
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -25,6 +26,7 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+syntax on
 set hidden
 set number
 set relativenumber
