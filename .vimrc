@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
-Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 " airline
@@ -17,6 +16,7 @@ let g:airline_section_warning = ''
 map <C-n> :NERDTreeToggle<CR>
 
 " color
+set t_Co=256
 colorscheme gruvbox
 set background=dark
 
@@ -35,4 +35,3 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 syntax on
 set hidden
 set number
-set relativenumber
